@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "9e97dc58-a25e-435a-818d-ed3f5b213d00",
+		"name": "HireMe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30087610"
+	},
+	"item": [
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjgzNzM3MDc0NjZkYTIxNTIwMmZmMiIsInJvbGUiOiJlbXBsb3llZSIsInVzZXJuYW1lIjoiVGFuaWEgQXJlZmluIiwiaWF0IjoxNzQ3NDc5NDQ3LCJleHAiOjE3NDc0ODMwNDd9.UjVVg25N1OufY7mAFwRCMadBPfXBgEtalEiHqkWLxzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"accept\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/application/update/6828610ac407501187b6e54c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"application",
+						"update",
+						"6828610ac407501187b6e54c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateJob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"_id\": \"6827680fb82fd8c9ea961569\",\r\n            \"title\": \"Senior Developer\",\r\n            \"description\": \"Build APIs and databases for clients\",\r\n            \"location\": \"Dhaka\",\r\n            \"salary\": \"35k - 50k\",\r\n            \"company\": \"ABC Tech\",\r\n            \"jobType\": \"Full-time\",\r\n            \"requirements\": \"JavaScript, MongoDB, Node.js\",\r\n            \"deadline\": \"2025-06-01T00:00:00.000Z\",\r\n            \"postedBy\": \"663c5d86b8cf810f3421a903\",\r\n            \"isActive\": true\r\n        }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/job/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"job",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateJob Copy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "ViewJob",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CreateApplication",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
